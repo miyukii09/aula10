@@ -1,7 +1,7 @@
-const express = require ('express');
-const cors = require ('cors');
-const mysql = require ('mysql');
-const app = express ();
+const express = require('express');
+const cors = require('cors');
+const mysql = require('mysql');
+const app = express();
 const PORT = 3001;
 
 app.use(cors());
@@ -12,14 +12,14 @@ const db = mysql.createConnection({
     port: 3306,
     user: 'root',
     password: '',
-    database: 'aulabd'
+    database 'aulabd'
 });
 
-// Conectando ao bando de dados
-db.connect((erro) => {
-    if (erro) {
-        console.error('Erro ao conectatr ao MySQL:',erro);
+// Conectando ao banco de dados 
+db.connect((erro) =>{
+    if (erro){
+        console.error('Erro ao conectar ao MySQL: ',erro);
     } else{
-        console.log('Conectando ao MySQL com sucesso!');
+        console.log('Conectado ao MySQL com sucesso!');
     }
 });
