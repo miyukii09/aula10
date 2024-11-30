@@ -2,7 +2,7 @@ create database aulabd;
 
 use aulabd;
 
-create table aulunos
+create table alunos
 (
 	codigo int key auto_increment,
     nome varchar (50),
